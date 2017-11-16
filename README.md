@@ -34,21 +34,32 @@ Optional parameter settings are given in the extended area of the tool interface
 Spatial parameters
 
 Ooutput point resolution: this parameter defines the spacing between each 3D point (output) in vertical and hori-zontal direction. 
-Latitude: for input feature containing a spatial reference, the mean latitude is automatically calcu-lated; otherwise, latitude will be taken with a default value of 45 degrees
-Height offset: defines the height (in meters) above the DEM surface for which calculations are to be per-formed. The height offset is usually applied to all 3D points
-Sky size: The parameter defines resolution or sky size for the viewshed, sky map, and sun map grids. The units are cells. The default creates a raster of 200 x 200 cells
+
+1. Latitude: for input feature containing a spatial reference, the mean latitude is automatically calcu-lated; otherwise, latitude will be taken with a default value of 45 degrees.
+
+2. Height offset: defines the height (in meters) above the DEM surface for which calculations are to be per-formed. The height offset is usually applied to all 3D points.
+
+3. Sky size: The parameter defines resolution or sky size for the viewshed, sky map, and sun map grids. The units are cells. The default creates a raster of 200 x 200 cells
 
 Topographic parameters
-Z factor:is to adjusts the units of measure for the z units (the height attribute in the input polygon) when they are different from the x,y units
-Slope and Aspect input type: provide information to the program about how slope and aspect information should be derived for each 3D point for analysis
-Calculation direction: provides information to the algorithm regarding the number of azimuth directions to be used when calculating the viewshed
+
+1. Z factor:is to adjusts the units of measure for the z units (the height attribute in the input polygon) when they are different from the x,y units.
+
+2. Slope and Aspect input type: provide information to the program about how slope and aspect information should be derived for each 3D point for analysis.
+
+3. Calculation direction: provides information to the algorithm regarding the number of azimuth directions to be used when calculating the viewshed
 
 Topographic parameters
-Zenith division: specifies the number of divisions in zenith direction to be used to create sky sectors in the sky map. The default is eight divisions (relative to zenith). Values must be greater than zero and less than half the sky size value.
-Azimuth division: specifies the number of divisions in azimuth direction to be used to create sky sectors in the sky map
-Diffuse model type: gives information to the algorithm about the type of sky for the time duration of solar in-solation calculation.
-Diffuse proportion: the proportion of global normal radiation flux that is diffuse is specified
-Transmittivity:The amount of solar radiation that is received by the surface is only a portion of what would be received outside the atmosphere 
+
+1. Zenith division: specifies the number of divisions in zenith direction to be used to create sky sectors in the sky map. The default is eight divisions (relative to zenith). Values must be greater than zero and less than half the sky size value.
+
+2. Azimuth division: specifies the number of divisions in azimuth direction to be used to create sky sectors in the sky map
+
+3. Diffuse model type: gives information to the algorithm about the type of sky for the time duration of solar in-solation calculation.
+
+4. Diffuse proportion: the proportion of global normal radiation flux that is diffuse is specified
+
+5. Transmittivity:The amount of solar radiation that is received by the surface is only a portion of what would be received outside the atmosphere 
 
 
 
