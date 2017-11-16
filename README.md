@@ -9,3 +9,20 @@ Please copy the directory "Help" to C:\. Double click on the "Multipatch solar r
 
 ## Description of the GUI
 A snap shot of the tool GUI is given in the following figure. Rectangles with red and green colour shows the initial (red rectangle) and extended interface (green rectangles) of the tool. The initial GUI (red rec-tangle area) is shown once the user clicks on the specified button on the ArcScene GUI. The initial GUI has options that must be fulfilled to run the tool. The user has to mention at least the input features, minimum one output feature and the time dura-tion for which the insolation would be calculated. All these inputs and parameter can be set by the initial GUI area. The green rectangle area just below the red rectangle is an ex-tended optional area of the tool GUI which can be activated by clicking on the “<<Other optional settings” label. Here the user can tune some default spatial, topographic or radia-tion parameters for calculating the insolation. Another extended area is the green rectangle area on the right hand side of red rectangle. This particular area is provided to give help for each option in the tool GUI and therefore could be activated and deactivated by the user by pressing the button “Show help” and “Hide help”. Detail description of each input, output and parameters in the tool GUIL are given in the following sections.
+
+![](https://github.com/Md-ImranHossain/Solar-Energy-Calculator-Tool-for-Building-Facades/blob/master/Pics/Capture.PNG)
+
+### Section for feature input
+A polygon shape file of the urban objects (mostly of the case: buildings) with height attribute and a raster format of Digital Elevation Model (DEM) of the area should be provided in the "Input Feature" section of the GUI. The DEM could be of type Digital Terrain Model (DTM) or Digital Surface Model (DSM).
+
+### Section for specifying output features
+The tool can provide up to three different outputs shape file of global radiation as well as three different optional output shape file in a single run. 
+
+The main output of the tool is a 3D point shape file. All other outputs in global radiation output section are calculated by 3D point output. The tool calculates incoming global solar radiation for regular spaced 3D points on build-ing facades. The user can control the spacing between points. The output has units of watt hours per square meter (Wh/m2).
+
+The next output is a 2D line feature class/ shape file. In this case the calculated incoming radiation for each facade is assigned to values in line features representing each building façade. The output has units of watt hours per square meter (Wh/m2).
+
+The third output is a 3D polygon shape file. The tool calculates total solar incoming radiation and intensity for each building (excluding building roof) and assigns the values in the polygon features representing each building. 
+
+Additionally, the tool can provide up to three optional outputs: a 3D point shape file containing measurement of only direct radiation for every point, a 3D point shape file containing measurement of only diffuse radiation for every point and a 3D point shape file containing measurement of duration for direct radiation for every point. The duration means total time of sun visibility for a particular 3D point. 
+
