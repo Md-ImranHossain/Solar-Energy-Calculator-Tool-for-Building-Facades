@@ -26,3 +26,25 @@ The third output is a 3D polygon shape file. The tool calculates total solar inc
 
 Additionally, the tool can provide up to three optional outputs: a 3D point shape file containing measurement of only direct radiation for every point, a 3D point shape file containing measurement of only diffuse radiation for every point and a 3D point shape file containing measurement of duration for direct radiation for every point. The duration means total time of sun visibility for a particular 3D point. 
 
+Time plays an important factor for calculating the insolation. The amount of solar insolation is varying significantly for different season, month and even within a day. The GUI offers various possibilities to specify time duration. To include all possible time intervals three options are given by which a user can specify a particular time interval for solar insolation calculation.
+
+### Optional parameter settings
+Optional parameter settings are given in the extended area of the tool interface and there-fore can be enable by clicking on the ‘<<Other optional settings’ label. This particular section of the GUI is designed for modifying some default spatial, topographic and radiation parameters which are needed for insolaiton calculation. 
+
+Spatial parameters
+
+Ooutput point resolution: this parameter defines the spacing between each 3D point (output) in vertical and hori-zontal direction. 
+Latitude: for input feature containing a spatial reference, the mean latitude is automatically calcu-lated; otherwise, latitude will be taken with a default value of 45 degrees
+Height offset: defines the height (in meters) above the DEM surface for which calculations are to be per-formed. The height offset is usually applied to all 3D points
+Sky size: The parameter defines resolution or sky size for the viewshed, sky map, and sun map grids. The units are cells. The default creates a raster of 200 x 200 cells
+
+Topographic parameters
+Z factor:is to adjusts the units of measure for the z units (the height attribute in the input polygon) when they are different from the x,y units
+Slope and Aspect input type: provide information to the program about how slope and aspect information should be derived for each 3D point for analysis
+Calculation direction: provides information to the algorithm regarding the number of azimuth directions to be used when calculating the viewshed
+
+Topographic parameters
+Zenith division: specifies the number of divisions in zenith direction to be used to create sky sectors in the sky map. The default is eight divisions (relative to zenith). Values must be greater than zero and less than half the sky size value.
+Azimuth division: specifies the number of divisions in azimuth direction to be used to create sky sectors in the sky map
+
+
