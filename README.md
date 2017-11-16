@@ -46,5 +46,9 @@ Calculation direction: provides information to the algorithm regarding the numbe
 Topographic parameters
 Zenith division: specifies the number of divisions in zenith direction to be used to create sky sectors in the sky map. The default is eight divisions (relative to zenith). Values must be greater than zero and less than half the sky size value.
 Azimuth division: specifies the number of divisions in azimuth direction to be used to create sky sectors in the sky map
+Diffuse model type: gives information to the algorithm about the type of sky for the time duration of solar in-solation calculation.
+Diffuse proportion: the proportion of global normal radiation flux that is diffuse is specified
+Transmittivity:The amount of solar radiation that is received by the surface is only a portion of what would be received outside the atmosphere 
+
 
 
